@@ -1,0 +1,14 @@
+#sidebar{
+    width: 30%;
+    min-height: 600px;
+    padding: 25px 0;
+    .sidebar__wrap {
+        box-shadow: 1px 2px 3px 4px #ddd;
+        padding: 20px;
+        text-align: center;
+        color: #004;
+        border-radius: 5px;
+        height: 100%;
+    }
+    
+}

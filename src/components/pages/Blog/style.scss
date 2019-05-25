@@ -1,0 +1,29 @@
+#blog {
+    .list-posts {
+        display: flex;
+        flex-wrap: wrap;
+        .post {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 8px;
+            .wrap {
+                background-color: #0000001c;
+                min-height: 300px;
+                padding: 5px;
+                
+                cursor: pointer;
+            &:hover {
+                box-shadow: -1px 2px 14px 0px black;
+            }
+                p {
+                    max-width: 100%;
+                }
+                h4 {
+                    margin: 0;
+                    background: #ccc;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
