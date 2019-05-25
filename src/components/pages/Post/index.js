@@ -15,15 +15,10 @@ class Post extends Component {
 
     render() {
         const {
-            getPost,
-        } = this.props;
-
-        const {
             id,
             title,
             body,
-        } = getPost;
-
+        } = this.props.getPost;
 
         return (
             <div id="post" >
@@ -36,7 +31,6 @@ class Post extends Component {
                                 comments={ this.props.commentsPost }
                                 addCommentPost={ this.props.addCommentPost }/>
                         </div>
-                        
                     </div>
                     <Sidebar blog={false}/>
                 </div>
@@ -44,8 +38,6 @@ class Post extends Component {
         )
     }
 }
-
-
 
 const mapStateToProps = (state, ownProps) => ({
     getPost: getPost(state, ownProps),
