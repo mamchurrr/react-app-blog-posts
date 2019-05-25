@@ -4,7 +4,6 @@ const initialState = {
 }
 
 export default function(state = initialState, action) {
-    console.log('Post', action)
     switch (action.type) {
         case "ADD_POST_ID":
             return {

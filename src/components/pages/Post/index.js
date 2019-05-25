@@ -38,7 +38,7 @@ class Post extends Component {
                         </div>
                         
                     </div>
-                    <Sidebar />
+                    <Sidebar blog={false}/>
                 </div>
             </div>
         )

@@ -9,7 +9,6 @@ class AddCommentPostForm extends Component {
     this.state = {
       body: ''
     };
-    console.log(props)
   }
 
   onChange = (e) => this.setState({ [e.target.name]: e.target.value })

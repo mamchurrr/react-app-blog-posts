@@ -10,7 +10,6 @@ export const fetchPostAction = () => dispatch => {
     
     getPosts()
         .then(posts => {
-            console.log(posts)
             dispatch(successFetchPostsActionType(posts))
             localStorage.setItem('posts', JSON.stringify(posts))
             setTimeout(() => {

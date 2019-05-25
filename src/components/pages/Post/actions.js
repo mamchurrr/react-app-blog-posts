@@ -6,9 +6,7 @@ export const addCommentsPostActionType = commentsPost => ({ type: 'ADD_COMMENTS_
 export const fetchCommentsAction = postId => dispatch => {
     fetchComments(postId)
         .then(commentsData => {
-            console.log("fetchComments", commentsData)
             const { comments } = commentsData
-            console.log("comments", comments)
             dispatch(addCommentsPostActionType(comments))
         })
 }

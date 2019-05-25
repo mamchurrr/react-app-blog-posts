@@ -15,8 +15,6 @@ class Blog extends Component {
         const { posts, addPosts } = this.props;
         const allPosts = [...new Set([...posts ,...addPosts])]
         
-        console.log("addPosts", allPosts)
-
         return (
             <div id="blog">
                 <div className="container">
@@ -26,7 +24,7 @@ class Blog extends Component {
                             <ListPosts posts={allPosts} />
                         </div>
                     </div>
-                    <Sidebar />
+                    <Sidebar blog={true}/>
                 </div>
             </div>
         )

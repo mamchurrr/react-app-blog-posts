@@ -4,7 +4,6 @@ const initialState = {
 }
 
 export default function (state = initialState, action) {
-    console.log("SIDEBAR_REDUCER", action.post)
     switch (action.type) {
         case "ADD_POST":
             return {
